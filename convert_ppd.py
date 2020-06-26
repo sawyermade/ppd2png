@@ -11,6 +11,7 @@ def cvt_png(coord_list):
 		os.makedirs('output')
 
 	pyautogui.click(x=fx, y=fy)
+	time.sleep(5)
 	fname = str(1).zfill(4) + '.png'
 	pyautogui.screenshot(os.path.join('output', fname), region=(tl[0], tl[1], w, h))
 	for i in range(1, 1151):
