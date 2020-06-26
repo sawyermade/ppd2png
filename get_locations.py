@@ -1,5 +1,8 @@
 import pyautogui, sys
 
+def get_ss(fname='temp.png'):
+	im = pyautogui.screenshot(fname)
+
 def get_pos():
 	try:
 		while True:
@@ -14,9 +17,7 @@ def get_pos():
 def main():
 	print(pyautogui.size())
 	get_pos()
-
-	# im = pyautogui.screenshot('temp.png')
-	# im.save()
+	get_ss()
 
 if __name__ == '__main__':
 	main()
