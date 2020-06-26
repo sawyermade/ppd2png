@@ -1,6 +1,6 @@
 import pyautogui, sys, time
 
-def cvt_png():
+def cvt_png(coord_list):
 	button = (coord_list[0], coord_list[1])
 	tl, tr = (coord_list[2], coord_list[3]), (coord_list[4], coord_list[5])
 	br, bl = (coord_list[6], coord_list[7]), (coord_list[8], coord_list[9])
